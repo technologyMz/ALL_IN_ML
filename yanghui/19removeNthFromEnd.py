@@ -4,11 +4,11 @@ class ListNode:
         self.val = val
         self.next = next
 class Solution:
-    def removeNthFromEnd(self, head: ListNode, n: int) -> ListNode:
-        dummy = ListNode(0, head)
+    def removeNthFromEnd(self, head: ListNode, n: int) -> ListNode: 
+        dummy = ListNode(0, head) #给最前面增加了一个节点 相当于left在-1的位置
         left = dummy
         right = head
-        for i in range(n + 1):
+        for i in range(n):
             right = right.next
         while right:
             left = left.next
@@ -40,5 +40,5 @@ head.next.next.next.next = ListNode(4)
 n = 2
 
 solution = Solution()
-output = solution.removeNthFromEnd_demo(head, n)
+output = solution.removeNthFromEnd(head, n)
 print(output)

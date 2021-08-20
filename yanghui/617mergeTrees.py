@@ -45,8 +45,6 @@ class Solution:
                 node_merged.right = node1.right
             elif node2.right:
                 node_merged.right = node2.right
-
-
         return merged
 
     def mergeTrees_demo(self, t1, t2):
