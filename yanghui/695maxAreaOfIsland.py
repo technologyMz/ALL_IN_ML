@@ -35,6 +35,7 @@ class Solution:
                         used_point.append(one_point)
             used_point.append(seed)
         return max_area
+
     def maxAreaOfIsland_DFS(self, grid) -> int:
         global sum_temp
         sum_temp = 0

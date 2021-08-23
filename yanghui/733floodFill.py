@@ -40,7 +40,7 @@ class Solution:
                 print(mx,my)
                 if 0 <= mx < len(image) and 0 <= my < len(image[0]):
                     print(image[mx][my])
-                    if  image[mx][my] == oldColor:
+                    if image[mx][my] == oldColor:
                         image[mx][my] = newColor
                         due.append([mx,my])
         return image
