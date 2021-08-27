@@ -36,7 +36,7 @@ class Solution:
 
 
 n = 4
-k = 2
+k = 4  # 这种情况，死循环
 solution = Solution()
 output = solution.combine(n,k)
 print(output)
